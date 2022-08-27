@@ -366,7 +366,19 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--primaryBg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
 }
 
 h1,
@@ -375,7 +387,14 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0px;
-  padding: 0px;
-  font-family: var(--primaryFont);
+  font-family: var(--primFont);
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
