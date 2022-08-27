@@ -22,7 +22,7 @@ const MobileNavElements = ({ clickHandler }) => {
     <Wrapper>
       <div className={`container-activated-element ${shouldActive(null)}`} onClick={() => handleNestedLiClick(null)}>
         <img src={angleRightSvg} alt="angle right" />
-        <span className='nav-element'>{activatedLinkName}</span>
+        <span className='app__nav-element'>{activatedLinkName}</span>
       </div>
 
       <ul className={`parrent__ul ${shouldActive(null)}`}>
@@ -31,7 +31,7 @@ const MobileNavElements = ({ clickHandler }) => {
           <img src={angleRightSvg} alt="angle right" />
           <ul className="nested__ul">
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#" className='nav-element'>ESG</a>
+              <a href="#" className='app__nav-element'>ESG</a>
             </li>
           </ul>
         </li>
@@ -41,22 +41,22 @@ const MobileNavElements = ({ clickHandler }) => {
           <img src={angleRightSvg} alt="angle right" />
           <ul className="nested__ul">
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#" className='nav-element'>Intelligence</a>
+              <a href="#" className='app__nav-element'>Intelligence</a>
             </li>
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#" className='nav-element'>VC Blog</a>
+              <a href="#" className='app__nav-element'>VC Blog</a>
             </li>
           </ul>
         </li>
         <li onClick={e => closeNav(e)} className="parrent__li">
-          <a href="#" className='nav-element'>Podcasts</a>
+          <a href="#" className='app__nav-element'>Podcasts</a>
         </li>
         <li onClick={e => closeNav(e)} className="parrent__li">
-          <a href="#" className='nav-element'>Media</a>
+          <a href="#" className='app__nav-element'>Media</a>
         </li>
 
         <li onClick={e => closeNav(e)} className="parrent__li">
-          <a href="#" className='nav-element'>Seed</a>
+          <a href="#" className='app__nav-element'>Seed</a>
         </li>
 
         <li className={`parrent__li ${shouldActive('Info')}`} onClick={() => handleNestedLiClick('Info')}>
@@ -64,16 +64,16 @@ const MobileNavElements = ({ clickHandler }) => {
           <img src={angleRightSvg} alt="angle right" />
           <ul className="nested__ul">
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#" className='nav-element'>Teams</a>
+              <a href="#" className='app__nav-element'>Teams</a>
             </li>
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#" className='nav-element'>Timeline</a>
+              <a href="#" className='app__nav-element'>Timeline</a>
             </li>
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#" className='nav-element'>Careers</a>
+              <a href="#" className='app__nav-element'>Careers</a>
             </li>
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#" className='nav-element'>Contact</a>
+              <a href="#" className='app__nav-element'>Contact</a>
             </li>
           </ul>
         </li>

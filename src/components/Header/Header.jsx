@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <Wrapper>
       <div className="container-top">
-        <img src={logo} alt="logo" />
+        <a href="#">
+          <img src={logo} alt="logo" />
+        </a>
         <MobileNav></MobileNav>
       </div>
       <DesktopNav></DesktopNav>
@@ -17,7 +19,10 @@ const Header = () => {
 
 const Wrapper = styled.header`
   position: fixed;
+  z-index: 10;
   width: 100%;
+  top: 0%;
+
   background-color: var(--white);
   .container-top {
     display: flex;
@@ -36,10 +41,8 @@ const Wrapper = styled.header`
     justify-content: space-between;
     align-items: center;
     box-shadow: var(--customShadow);
-    
-    padding-inline: 40px;
-    
 
+    padding-inline: 40px;
   }
 `;
 

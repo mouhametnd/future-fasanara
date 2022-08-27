@@ -16,17 +16,65 @@ body {
   background-color: var(--bodyBg);
 }
 
-.nav-element {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  letter-spacing: 0.4px;
-  transition: opacity 0.1s ease-in-out;
-  color: var(--black);
+.app {
+  &__wrapper {
+    padding-top: 100px;
+  }
 
-  @media screen and (hover: hover) {
-    &:hover{
-      opacity: 0.6;
+  &__nav-element {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    transition: opacity 0.1s ease-in-out;
+    color: var(--black);
+
+    @media screen and (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
     }
+  }
+
+  &__normal-button {
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    border-radius: 40px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__section {
+    padding: 70px 20px 0px;
+    @media screen and (min-width: 768px) {
+
+      padding-inline: 60px;
+    }
+  }
+
+  &__section-title {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__section-subtitle {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 160%;
+  }
+
+  &__normal-text {
+    font-weight: 400;
+    flex: 1rem;
+    color: var(--white);
+    line-height: 165%;
   }
 }

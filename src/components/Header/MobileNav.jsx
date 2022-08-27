@@ -33,10 +33,7 @@ const Aside = styled.aside`
   top: 100px;
   left: 0;
   width: 100%;
-  height: max-content;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
+  height: 100vh;
   padding-top: 20px;
   transition: clip-path 0.4s ease-in-out;
   clip-path: circle(0% at 0% 0%);
