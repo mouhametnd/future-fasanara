@@ -8,6 +8,10 @@ import businessImg from '../assets/imgs/business.webp';
 import lendItImg from '../assets/imgs/lendIt.webp';
 import aimSummitImg from '../assets/imgs/aim-summit.webp';
 import cryptoImg from '../assets/imgs/crypto.webp';
+import venturesImg from '../assets/imgs/ventures.webp';
+import digitalImg from '../assets/imgs/digital.webp';
+import quantImg from '../assets/imgs/quant.webp';
+import fintechImg from '../assets/imgs/fintech.webp';
 
 export const carouselItems = [
   {
@@ -81,5 +85,28 @@ export const arrayEvents = [
       'We participated and spoke about importance of ESG, the post-pandemic world, key legal developments, crypto and other topics.',
     image: cryptoImg,
     date: 'May 20, 2022',
+  },
+];
+
+export const arrayCapitals = [
+  {
+    title: 'Fasanara Fintech',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    image: fintechImg,
+  },
+  {
+    title: 'Fasanara Digital',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    image: digitalImg,
+  },
+  {
+    title: 'Fasanara Quant',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    image: quantImg,
+  },
+  {
+    title: 'Fasanara Ventures',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    image: venturesImg,
   },
 ];

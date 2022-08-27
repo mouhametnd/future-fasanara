@@ -32,8 +32,8 @@ const Wrapper = styled.header`
   }
 
   & img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
   }
 
   @media screen and (min-width: 768px) {
@@ -41,7 +41,6 @@ const Wrapper = styled.header`
     justify-content: space-between;
     align-items: center;
     box-shadow: var(--customShadow);
-
     padding-inline: 40px;
   }
 `;

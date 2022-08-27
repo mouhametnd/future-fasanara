@@ -5,7 +5,7 @@ import EventItem from './EventItem';
 
 const EventList = () => {
   return (
-    <Wrapper className="app__section">
+    <section className="app__section">
       <h2 className="app__section-title">Recent & Upcoming Events</h2>
       <p className="app__section-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veniam quia sit aut. Saepe?</p>
 
@@ -14,11 +14,9 @@ const EventList = () => {
           <EventItem key={index} {...eventContent}></EventItem>
         ))}
       </ContainerEvents>
-    </Wrapper>
+    </section>
   );
 };
-
-const Wrapper = styled.section``;
 
 const ContainerEvents = styled.section`
   display: grid;

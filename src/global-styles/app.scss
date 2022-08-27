@@ -18,7 +18,7 @@ body {
 
 .app {
   &__wrapper {
-    padding-top: 100px;
+    padding-top: 73px;
   }
 
   &__nav-element {
@@ -49,26 +49,27 @@ body {
   &__section {
     padding: 70px 20px 0px;
     @media screen and (min-width: 768px) {
-
       padding-inline: 60px;
     }
-  }
 
-  &__section-title {
-    font-size: clamp(1.4rem, 2.5vw, 2rem);
-    font-weight: 600;
-    color: var(--black);
-    margin-bottom: 30px;
-    text-align: center;
-  }
+    &-title {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 600;
+      color: var(--black);
+      margin-bottom: 30px;
+      text-align: center;
+    }
 
-  &__section-subtitle {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--black);
-    margin-bottom: 30px;
-    text-align: center;
-    line-height: 160%;
+    &-subtitle {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--black);
+      margin-bottom: 30px;
+      text-align: center;
+      line-height: 160%;
+      max-width: 800px;
+      margin-inline: auto;
+    }
   }
 
   &__normal-text {

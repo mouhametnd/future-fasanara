@@ -88,12 +88,9 @@ const Wrapper = styled.article`
     & p {
       transition: opacity 0.3s ease-in-out;
     }
-    & img{
+    & img {
       transition: transform 0.3s ease-in-out;
-
     }
-
-   
 
     &::before,
     &::after,
@@ -128,8 +125,7 @@ const Wrapper = styled.article`
       top: 55.5%;
       width: calc(100% - 60px);
       height: 2.5px;
-      clip-path: inset(0 0 0 100%   );
-      
+      clip-path: inset(0 0 0 100%);
     }
     & .span-effects:nth-of-type(2) {
       left: 52%;

@@ -30,7 +30,7 @@ const Wrapper = styled.nav`
 
 const Aside = styled.aside`
   position: fixed;
-  top: 100px;
+  top: 73px;
   left: 0;
   width: 100%;
   height: 100vh;

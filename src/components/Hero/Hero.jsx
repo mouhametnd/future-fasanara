@@ -78,8 +78,8 @@ const Wrapper = styled.section`
 
       & div {
         padding: 0px;
-        width: 13px;
-        height: 13px;
+        width: 10px;
+        height: 10px;
         border-radius: 10px;
         cursor: pointer;
         box-shadow: 0px 0px 0px 1px var(--white) inset;

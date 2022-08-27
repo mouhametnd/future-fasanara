@@ -1,3 +1,4 @@
+import CapitalList from './components/Capital/CapitalList';
 import EventList from './components/Events/EventList';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
@@ -8,6 +9,7 @@ function App() {
       <Header></Header>
       <Hero></Hero>
       <EventList></EventList>
+      <CapitalList></CapitalList>
     </div>
   );
 }
