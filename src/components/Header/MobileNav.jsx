@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import HamburgerButton from './HamburgerButton';
-import NavElements from './NavElements';
+import MobileNavElements from './MobileNavElements';
 
 const MobileNav = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleNav = () => setIsOpen(prev => !prev);
   const closeNav = () => setIsOpen(false);
 
@@ -13,7 +13,7 @@ const MobileNav = () => {
       <HamburgerButton clickHandler={toggleNav} isOpen={isOpen}></HamburgerButton>
 
       <Aside isOpen={isOpen} >
-        <NavElements clickHandler={closeNav}></NavElements>
+        <MobileNavElements clickHandler={closeNav}></MobileNavElements>
       </Aside>
     </Wrapper>
   );

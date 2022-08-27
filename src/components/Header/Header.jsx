@@ -32,7 +32,14 @@ const Wrapper = styled.header`
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: var(--customShadow);
+    
+    padding-inline: 40px;
+    
+
   }
 `;
 

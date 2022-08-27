@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import angleRightSvg from '../../assets/svgs/angle-right-solid.svg';
 
-const NavElements = ({ clickHandler }) => {
+const MobileNavElements = ({ clickHandler }) => {
   const [activatedLinkName, setActivatedLinkName] = useState(null);
   const handleNestedLiClick = linkName => setActivatedLinkName(linkName);
 
@@ -22,7 +22,7 @@ const NavElements = ({ clickHandler }) => {
     <Wrapper>
       <div className={`container-activated-element ${shouldActive(null)}`} onClick={() => handleNestedLiClick(null)}>
         <img src={angleRightSvg} alt="angle right" />
-        <span>{activatedLinkName}</span>
+        <span className='nav-element'>{activatedLinkName}</span>
       </div>
 
       <ul className={`parrent__ul ${shouldActive(null)}`}>
@@ -31,7 +31,7 @@ const NavElements = ({ clickHandler }) => {
           <img src={angleRightSvg} alt="angle right" />
           <ul className="nested__ul">
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#">ESG</a>
+              <a href="#" className='nav-element'>ESG</a>
             </li>
           </ul>
         </li>
@@ -41,22 +41,22 @@ const NavElements = ({ clickHandler }) => {
           <img src={angleRightSvg} alt="angle right" />
           <ul className="nested__ul">
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#">Intelligence</a>
+              <a href="#" className='nav-element'>Intelligence</a>
             </li>
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#">VC Blog</a>
+              <a href="#" className='nav-element'>VC Blog</a>
             </li>
           </ul>
         </li>
         <li onClick={e => closeNav(e)} className="parrent__li">
-          <a href="#podcasts">Podcasts</a>
+          <a href="#" className='nav-element'>Podcasts</a>
         </li>
         <li onClick={e => closeNav(e)} className="parrent__li">
-          <a href="#media">Media</a>
+          <a href="#" className='nav-element'>Media</a>
         </li>
 
         <li onClick={e => closeNav(e)} className="parrent__li">
-          <a href="#seed">Seed</a>
+          <a href="#" className='nav-element'>Seed</a>
         </li>
 
         <li className={`parrent__li ${shouldActive('Info')}`} onClick={() => handleNestedLiClick('Info')}>
@@ -64,16 +64,16 @@ const NavElements = ({ clickHandler }) => {
           <img src={angleRightSvg} alt="angle right" />
           <ul className="nested__ul">
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#">Teams</a>
+              <a href="#" className='nav-element'>Teams</a>
             </li>
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#">Timeline</a>
+              <a href="#" className='nav-element'>Timeline</a>
             </li>
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#">Careers</a>
+              <a href="#" className='nav-element'>Careers</a>
             </li>
             <li onClick={e => closeNav(e)} className="nested__li">
-              <a href="#">Contact</a>
+              <a href="#" className='nav-element'>Contact</a>
             </li>
           </ul>
         </li>
@@ -104,14 +104,7 @@ const Wrapper = styled.div`
     }
   }
 
-  & a,
-  & span {
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    letter-spacing: 0.4px;
-    color: var(--black);
-  }
+
 
   & img {
     object-fit: contain;
@@ -166,9 +159,6 @@ const Wrapper = styled.div`
       display: flex;
     }
 
-    & * {
-      pointer-events: none;
-    }
 
     & span {
       border-bottom: 2px solid var(--black);
@@ -189,4 +179,4 @@ const Wrapper = styled.div`
   }
 `;
 
-export default NavElements;
+export default MobileNavElements;
