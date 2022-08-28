@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const EventItem = ({ title, description, image, date }) => {
   return (
     <Wrapper>
-      <div className="container-img">
+      <div className="container-img app__darker-img">
         <img src={image} alt="tech image" />
       </div>
 
@@ -51,20 +51,6 @@ const Wrapper = styled.article`
   }
 
   .container {
-    &-img {
-      height: 100%;
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--black);
-        opacity: 0.5;
-      }
-    }
-
     &-content {
       position: absolute;
       left: 40px;

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const CapitalItem = ({ title, description, image }) => {
   return (
     <Wrapper>
-      <div className="container-img">
+      <div className="container-img app__darker-img">
         <img src={image} loading="lazy" alt={title} />
       </div>
       <div className="container-title">
@@ -27,7 +27,7 @@ const Wrapper = styled.article`
 
   & img {
     position: absolute;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
   }
 
   @media screen and (hover: hover) {
@@ -36,7 +36,6 @@ const Wrapper = styled.article`
         transform: scale(1.25);
       }
     }
-    
   }
 
   .container {
@@ -59,15 +58,8 @@ const Wrapper = styled.article`
       height: 100%;
       padding-right: 20px;
       &::before {
-        content: '';
         z-index: 1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--black);
-        opacity: 0.2;
+        opacity: 0.4;
       }
     }
   }

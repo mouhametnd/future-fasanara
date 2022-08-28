@@ -12,6 +12,14 @@ import venturesImg from '../assets/imgs/ventures.webp';
 import digitalImg from '../assets/imgs/digital.webp';
 import quantImg from '../assets/imgs/quant.webp';
 import fintechImg from '../assets/imgs/fintech.webp';
+import marketTimeImg from '../assets/imgs/market-time.webp';
+import mountainsImg from '../assets/imgs/mountains.webp';
+import marketDigitalImg from '../assets/imgs/market-digital.webp';
+import financialImg from '../assets/imgs/financial.webp';
+import fitEmbeddedImg from '../assets/imgs/ftt-embedded.webp';
+import learnerImg from '../assets/imgs/learner.webp';
+import learnersImg from '../assets/imgs/learners.webp';
+import resonanceImg from '../assets/imgs/resonance.webp';
 
 export const carouselItems = [
   {
@@ -91,22 +99,102 @@ export const arrayEvents = [
 export const arrayCapitals = [
   {
     title: 'Fasanara Fintech',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
     image: fintechImg,
   },
   {
     title: 'Fasanara Digital',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
     image: digitalImg,
   },
   {
     title: 'Fasanara Quant',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
     image: quantImg,
   },
   {
     title: 'Fasanara Ventures',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
     image: venturesImg,
+  },
+];
+
+export const arrayInsights = [
+  {
+    title: 'Scenarios | JAN 2022',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: fintechImg,
+  },
+  {
+    title: 'Scenarios | JAN 2022',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: marketTimeImg,
+  },
+
+  {
+    title: 'Scenarios | JAN 2022',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: mountainsImg,
+  },
+  ,
+  {
+    title: 'Scenarios | JAN 2022',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: marketDigitalImg,
+  },
+  ,
+  {
+    title: 'Scenarios | JAN 2022',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: financialImg,
+  },
+  ,
+  {
+    title: 'Scenarios | JAN 2022',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: marketTimeImg,
+  },
+];
+
+export const arrayPodcasts = [
+  {
+    title: 'Fb22. The Market Economy In 2025: A Visualization Exercise',
+    link: '#',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: fitEmbeddedImg,
+  },
+  {
+    title: 'Fb22. The Market Economy In 2025: A Visualization Exercise',
+    link: '#',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: learnerImg,
+  },
+  {
+    title: 'Fb22. The Market Economy In 2025: A Visualization Exercise',
+    link: '#',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: learnersImg,
+  },
+  {
+    title: 'Fb22. The Market Economy In 2025: A Visualization Exercise',
+    link: '#',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: resonanceImg,
+  },
+  {
+    title: 'Fb22. The Market Economy In 2025: A Visualization Exercise',
+    link: '#',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: aimSummitImg,
+  },
+  {
+    title: 'Fb22. The Market Economy In 2025: A Visualization Exercise',
+    link: '#',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
+    image: cryptoImg,
   },
 ];
