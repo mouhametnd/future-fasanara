@@ -20,6 +20,11 @@ import fitEmbeddedImg from '../assets/imgs/ftt-embedded.webp';
 import learnerImg from '../assets/imgs/learner.webp';
 import learnersImg from '../assets/imgs/learners.webp';
 import resonanceImg from '../assets/imgs/resonance.webp';
+import newsImg from '../assets/imgs/news.webp';
+import interviewImg from '../assets/imgs/interview.webp';
+import foundingImg from '../assets/imgs/founding.webp';
+
+
 
 export const carouselItems = [
   {
@@ -196,5 +201,29 @@ export const arrayPodcasts = [
     link: '#',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident. ',
     image: cryptoImg,
+  },
+];
+
+export const arrayMedia = [
+  {
+    title: 'Interview',
+    date: 'May 2022',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    image: interviewImg,
+  },
+  {
+    title: 'Funding News',
+    date: 'May 2022',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    image: foundingImg,
+  },
+  {
+    title: 'Sky News',
+    date: 'May 2022',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam facere quia provident consequatur necessitatibus?',
+    image: newsImg,
   },
 ];

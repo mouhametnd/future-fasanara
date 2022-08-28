@@ -21,7 +21,7 @@ const PodcastList = () => {
 
 const Wrapper = styled.section`
   background-image: linear-gradient(var(--white) 0% 15%, var(--black) 15% 100%);
-  padding-bottom: 30px;
+  padding-bottom: 80px;
   @media screen and (min-width: 680px) {
     background-image: linear-gradient(var(--white) 0% 26%, var(--black) 26% 100%);
   }

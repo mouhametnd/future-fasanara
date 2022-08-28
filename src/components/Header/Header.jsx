@@ -19,9 +19,11 @@ const Header = () => {
 
 const Wrapper = styled.header`
   position: fixed;
+  top: 0%;
   z-index: 10;
   width: 100%;
-  top: 0%;
+  max-width: 2000px;
+  margin: 0 auto;
 
   background-color: var(--white);
   .container-top {

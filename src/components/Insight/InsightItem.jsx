@@ -31,7 +31,7 @@ const Wrapper = styled.article`
         clip-path: circle(80% at 50% 50%);
       }
 
-      & .container-content{
+      & .container-content {
         color: var(--white);
       }
     }
@@ -55,7 +55,6 @@ const Wrapper = styled.article`
     max-height: 300px;
   }
 
-  /* anf hover actions */
   .container {
     &-content {
       position: relative;
@@ -64,21 +63,18 @@ const Wrapper = styled.article`
 
       & * {
         color: inherit;
-        transition: color 0.4s ease
-
+        transition: color 0.4s ease;
       }
     }
   }
 
   & h3 {
     font-size: 1.3rem;
-    text-align: center;
   }
   & p {
     font-size: 1rem;
     line-height: 155%;
-
-
+    font-weight: 300;
   }
 `;
 

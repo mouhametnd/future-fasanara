@@ -3,6 +3,7 @@ import EventList from './components/Events/EventList';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import InsightList from './components/Insight/InsightList';
+import MediaList from './components/Media/MediaList';
 import PodcastList from './components/Podcast/PodcastList';
 import './global-styles/app.scss';
 function App() {
@@ -14,6 +15,8 @@ function App() {
       <CapitalList></CapitalList>
       <InsightList></InsightList>
       <PodcastList></PodcastList>
+
+      <MediaList></MediaList>
     </div>
   );
 }
