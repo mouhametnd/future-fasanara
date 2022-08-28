@@ -27,7 +27,7 @@ const Hero = () => {
             <div className="container-content">
               <h3>{title}</h3>
               <p>{description}</p>
-              <button className="app__normal-button">{buttonContent}</button>
+              <button className="app__button--base app__button--hover">{buttonContent}</button>
             </div>
           </article>
         ))}
@@ -142,37 +142,7 @@ const Wrapper = styled.section`
     z-index: -1;
   }
 
-  & button {
-    position: relative;
-    background-color: transparent;
-    box-shadow: 0px 0px 0px 1px #fff inset;
-    color: var(--white);
-    overflow: hidden;
-    transition: 0.3s color ease-in;
-    max-width: 135px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: var(--white);
-      clip-path: circle(0% at 100% 100%);
-      transition: 0.3s clip-path ease-in;
-    }
-
-    @media screen and (hover: hover) {
-      &:hover {
-        color: var(--black);
-        &::before {
-          clip-path: circle(100% at 50% 50%);
-        }
-      }
-    }
-  }
+ 
 `;
 
 export default Hero;

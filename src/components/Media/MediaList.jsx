@@ -30,7 +30,7 @@ const Wrapper = styled.section`
   @media screen and (min-width: 1500px) {
     display: block;
     position: relative;
-    min-height: 500px;
+    min-height: 650px;
 
     & article {
       position: absolute;
