@@ -24,26 +24,25 @@ import newsImg from '../assets/imgs/news.webp';
 import interviewImg from '../assets/imgs/interview.webp';
 import foundingImg from '../assets/imgs/founding.webp';
 
-
-
 export const carouselItems = [
   {
     title: 'Digital Future',
     description:
-      'Use Of Digital Technology To Build Resilient Portfolios. Going Beyond 60/40 Traditional Asset Allocation.',
+      'Fasanara discusses the unreliability of asset prices. Tech stocks, market intervention. Incidental triggers for a big market correction. Non-linearity, Risk-Parity and fake markets.',
     image: carouselfImg2,
     buttonContent: 'Learn More',
   },
   {
     title: 'Scenarios',
-    description: 'The Market Economy In 2025: A Visualization Exercise...      ',
+    description:
+      'Fasanara discusses the unreliability of asset prices. Tech stocks, market intervention. Incidental triggers for a big market correction. Non-linearity, Risk-Parity and fake markets.',
     image: carouselfImg1,
     buttonContent: 'Read More',
   },
   {
     title: 'Investing in a Digital Future',
     description:
-      'Use Of Digital Technology To Build Resilient Portfolios. Going Beyond 60/40 Traditional Asset Allocation.',
+      'Fasanara discusses the unreliability of asset prices. Tech stocks, market intervention. Incidental triggers for a big market correction. Non-linearity, Risk-Parity and fake markets.',
     image: carouselfImg3,
     buttonContent: 'Explore',
   },

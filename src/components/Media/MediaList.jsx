@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import { arrayMedia } from '../../constants/constants';
+import SectionWrapper from '../Others/SectionWrapper';
 import MediaItem from './MediaItem';
 
 const MediaList = () => {
   return (
-    <section className="app__section">
-      <h2 className="app__section-title">Media Lorem ipsum dolor sit.</h2>
-      <p className="app__section-subtitle">
-        Fasanara Capital is an independent, owner-managed alternative asset management company authorized and regulated
-        by the Financial Conduct Authority.
-      </p>
+    <SectionWrapper
+      title="Media Lorem ipsum dolor sit."
+      description="   Fasanara Capital is an independent, owner-managed alternative asset management company authorized and regulated
+    by the Financial Conduct Authority."
+    >
       <Wrapper>
         {arrayMedia.map((media, index) => (
           <MediaItem key={index} {...media}></MediaItem>
         ))}
       </Wrapper>
-    </section>
+    </SectionWrapper>
   );
 };
 

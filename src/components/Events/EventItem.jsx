@@ -5,7 +5,7 @@ const EventItem = ({ title, description, image, date }) => {
   return (
     <Wrapper>
       <div className="container-img app__darker-img">
-        <img src={image} alt="tech image" />
+        <img src={image} loading='lazy' alt="tech image" />
       </div>
 
       <div className="container-content">
@@ -21,8 +21,8 @@ const EventItem = ({ title, description, image, date }) => {
 
 const Wrapper = styled.article`
   position: relative;
-  min-height: 320px;
   width: 100%;
+  min-height: 320px;
   max-width: 400px;
   margin-inline: auto;
   border-radius: 10px;

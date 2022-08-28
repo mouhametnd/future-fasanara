@@ -24,8 +24,8 @@ const Wrapper = styled.header`
   width: 100%;
   max-width: 2000px;
   margin: 0 auto;
-
   background-color: var(--white);
+
   .container-top {
     display: flex;
     justify-content: space-between;

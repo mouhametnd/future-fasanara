@@ -1,23 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import { arrayCapitals } from '../../constants/constants';
+import SectionWrapper from '../Others/SectionWrapper';
 import CapitalItem from './CapitalItem';
 
 const CapitalList = () => {
   return (
-    <section className="app__section">
-      <h2 className="app__section-title">Fasanara Capital</h2>
-      <p className="app__section-subtitle">
-        Fasanara Capital is an independent, owner-managed alternative asset management company authorized and regulated
-        by the Financial Conduct Authority.{' '}
-      </p>
-
+    <SectionWrapper
+      title="Fasanara Capital"
+      description="Fasanara Capital is an independent, owner-managed alternative asset management company authorized and regulated
+      by the Financial Conduct Authority"
+    >
       <Wrapper>
         {arrayCapitals.map((capital, index) => (
           <CapitalItem {...capital} key={index}></CapitalItem>
         ))}
       </Wrapper>
-    </section>
+    </SectionWrapper>
   );
 };
 
@@ -27,7 +26,6 @@ const Wrapper = styled.section`
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
-
   }
 
   @media screen and (min-width: 1524px) {

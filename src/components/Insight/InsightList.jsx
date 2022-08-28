@@ -7,14 +7,16 @@ const InsightList = () => {
   return (
     <section className="app__section">
       <h2 className="app__section-title">Insights from the team</h2>
-      <p className="app__section-subtitle">Fasanara Capital is an independent, owner-managed alternative asset management company authorized and regulated by the Financial Conduct Authority.</p>
+      <p className="app__section-subtitle">
+        Fasanara Capital is an independent, owner-managed alternative asset management company authorized and regulated
+        by the Financial Conduct Authority.
+      </p>
 
-<Wrapper>
-
-      {arrayInsights.map((insight, index) => (
-        <InsightItem key={index} {...insight}></InsightItem>
+      <Wrapper>
+        {arrayInsights.map((insight, index) => (
+          <InsightItem key={index} {...insight}></InsightItem>
         ))}
-        </Wrapper>
+      </Wrapper>
     </section>
   );
 };
@@ -28,6 +30,6 @@ const Wrapper = styled.section`
   @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
-`
+`;
 
 export default InsightList;

@@ -27,7 +27,6 @@ const Wrapper = styled.form`
   h3 {
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--gray);
     color: var(--white);
   }
 
@@ -36,11 +35,13 @@ const Wrapper = styled.form`
     gap: 10px;
   }
   input {
+    max-width: 300px;
+    padding: 10px;
     background-color: var(--white);
     border: 1px solid var(--gray);
     border-radius: 5px;
-    max-width: 300px;
-    padding: 10px;
+    outline: none;
+    border: none;
     font-size: 1rem;
     color: var(--black);
 

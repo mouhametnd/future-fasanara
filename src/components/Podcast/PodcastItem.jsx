@@ -6,10 +6,10 @@ const PodcastItem = ({ image, title, description, link }) => {
   return (
     <Wrapper>
       <a href={link}>
-        <img loading='lazy' src={linkSvg} alt={title} />
+        <img loading="lazy" src={linkSvg} alt={title} />
       </a>
       <div className="container-bg-image app__darker-img">
-        <img loading='lazy' src={image} alt={title} />
+        <img loading="lazy" src={image} alt={title} />
       </div>
 
       <div className="container-text">
@@ -37,7 +37,6 @@ const Wrapper = styled.article`
     top: 49px;
     left: 10%;
     border: 2px solid var(--white);
-    padding-inline: 10px;
     padding: 10px 13px;
     border-radius: 50%;
 
@@ -106,9 +105,9 @@ const Wrapper = styled.article`
     }
 
     & a,
-      & .container-text {
-        transition: transform 0.4s linear;
-      }
+    & .container-text {
+      transition: transform 0.4s linear;
+    }
 
     &:hover {
       & a,

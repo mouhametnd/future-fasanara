@@ -17,16 +17,16 @@ const MediaItem = ({ image, title, description, date }) => {
 };
 
 const Wrapper = styled.article`
+  position: relative;
+  width: 100%;
+  max-width: 370px;
+  min-height: 480px;
+  margin-inline: auto;
   background-color: var(--white);
   box-shadow: var(--customShadow);
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-  width: 100%;
-  max-width: 370px;
-  min-height: 480px;
-  margin-inline: auto;
-  position: relative;
 
   & h3 {
     font-size: 1.3rem;
@@ -34,8 +34,7 @@ const Wrapper = styled.article`
 
   & span {
     font-weight: 500;
-    color: var(--gray);
-    color: #333;
+    color: var(--darkGray);
   }
 
   & p {
@@ -62,10 +61,9 @@ const Wrapper = styled.article`
   }
 
   @media screen and (min-width: 1500px) {
-    max-width: none;
-    height: max-content;
     display: flex;
     justify-content: space-between;
+    height: max-content;
     max-width: 700px;
     min-height: 300px;
     max-height: 300px;

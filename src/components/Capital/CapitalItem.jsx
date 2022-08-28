@@ -18,17 +18,12 @@ const CapitalItem = ({ title, description, image }) => {
 const Wrapper = styled.article`
   position: relative;
   max-width: 500px;
+  width: 100%;
   min-height: 300px;
   margin-inline: auto;
   border-radius: 5px;
   overflow: hidden;
-  width: 100%;
   cursor: pointer;
-
-  & img {
-    position: absolute;
-    transition: transform 0.3s ease;
-  }
 
   @media screen and (hover: hover) {
     &:hover {
@@ -36,6 +31,11 @@ const Wrapper = styled.article`
         transform: scale(1.25);
       }
     }
+  }
+
+  & img {
+    position: absolute;
+    transition: transform 0.3s ease;
   }
 
   .container {
@@ -49,9 +49,9 @@ const Wrapper = styled.article`
       max-width: calc(100% - 100px);
       max-height: calc(100% - 40px);
       background-color: var(--white);
+      padding-inline: 20px;
       mix-blend-mode: lighten;
       isolation: isolate;
-      padding-inline: 20px;
     }
 
     &-img {
@@ -68,7 +68,7 @@ const Wrapper = styled.article`
     padding-top: 15px;
     color: #000;
     text-align: center;
-    font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+    font-size: clamp(2.5rem, 3.5vw, 3rem);
   }
 
   & p {

@@ -112,16 +112,16 @@ const Wrapper = styled.nav`
 
     .nested {
       &__ul {
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.2s ease-in-out;
-        display: flex;
         position: absolute;
         top: 100%;
         left: 0px;
-        flex-flow: column;
+        opacity: 0;
+        display: flex;
         gap: 5px;
+        flex-flow: column;
         padding: 5px 10px;
+        pointer-events: none;
+        transition: opacity 0.2s ease-in-out;
         background-color: var(--white);
         cursor: pointer;
         border-radius: 10px;
@@ -140,12 +140,12 @@ const Wrapper = styled.nav`
           &::before {
             content: '';
             position: absolute;
+            left: -10px;
+            top: 50%;
             width: 20px;
             height: 1.7px;
-            background-color: var(--black);
-            top: 50%;
-            left: -10px;
             border-radius: 10px;
+            background-color: var(--black);
             clip-path: inset(0 100% 0 0);
             transition: clip-path 0.2s ease-in-out;
           }

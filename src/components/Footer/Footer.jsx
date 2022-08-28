@@ -55,14 +55,14 @@ const Footer = () => {
 };
 
 const Wrapper = styled.footer`
-  background-image: linear-gradient(#0007, #0007), url(${({ footerBg }) => footerBg});
-  margin-top: 100px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 100px 30px;
   display: flex;
   flex-direction: column;
   gap: 50px;
+  margin-top: 100px;
+  padding: 100px 30px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#0007, #0007), url(${({ footerBg }) => footerBg});
+  background-size: cover;
 
   .container-top {
     display: grid;

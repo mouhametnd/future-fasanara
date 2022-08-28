@@ -14,16 +14,16 @@ const InsightItem = ({ image, title, description }) => {
 };
 
 const Wrapper = styled.article`
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  max-width: 370px;
+  margin-inline: auto;
   background-color: var(--white);
   box-shadow: var(--customShadow);
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
-  width: 100%;
-  min-height: 520px;
-  max-width: 370px;
-  margin-inline: auto;
-  position: relative;
 
   @media screen and (hover: hover) {
     &:hover {
